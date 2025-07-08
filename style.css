@@ -1,0 +1,24 @@
+h1 {
+  color: #080a71; /* bleu foncé */
+}
+
+h2 {
+  color: #3366ff; /* bleu moyen */
+}
+
+h3 {
+  color: #99ccff; /* bleu clair */
+}
+.profile {
+ align-items: center;
+display : flex;}
+
+.profile img {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+}
+.profile h1 {
+  margin-left: 150px;
+  font-size: 2em;
+}
