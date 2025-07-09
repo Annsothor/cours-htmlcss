@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Inscription</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #998ed4;
+    margin: 0;
+    padding-left: 150px;
+    padding-right: 150px;
+    padding-top: 100px; 
+    padding-bottom: 50px;
+    display: flex;
+    justify-content: center;
+  }
+
+  h2 {
+    color: #761a88;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+    margin-top: 0;
+    margin-bottom: 30px;
+    
+  }
+
+  form {
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+
+  label {
+    display: block;
+    margin-bottom: 5px;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  input[type="date"],
+  input[type="number"],
+  input[type="tel"],
+  input[type="file"],
+  input[type="password"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+
+  input[type="submit"] {
+    background: #5cb85c;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  input[type="submit"]:hover {
+    background: #4cae4c;
+  }
+</style>
+</head>
+<body>
+
+  <h2>Inscription</h2>
+
+  <form action="traitement_inscription.php" method="POST">
+
+<p>Information personelles</p>
+    <label for="username">Nom d'utilisateur :</label><br>
+    <input type="text" id="username" name="username" required><br><br>
+    
+    <label for="date_naissance">Date de naissance :</label><br>
+    <input type="date" id="date_naissance" name="date_naissance" required><br><br>
+    
+    <label for="email">Adresse e-mail :</label><br>
+    <input type="email" id="email" name="email" required><br><br>
+    
+    <label for="email_confirm">Confirmer l'adresse e-mail :</label><br>
+    <input type="email" id="email_confirm" name="email_confirm" required><br><br>
+
+    <label for="photo">Photo de profil :</label><br>
+    <input type="file" id="photo" name="photo" accept="image/*"><br><br>
+    
+    <label for="card_number">Numéro de carte bancaire :</label><br>
+    <input type="number" id="card_number" name="card_number" required><br><br>
+    
+    <label for="confirm_card_number">Confirmer le numéro de carte bancaire :</label><br>
+    <input type="number" id="confirm_card_number" name="confirm_card_number" required><br><br>
+<p>Coordonnées</p>
+    <label for="phone">Numéro de téléphone :</label><br>
+    <input type="tel" id="phone" name="phone" required><br><br>
+
+    <label for="adresse">Adresse :</label><br>
+    <input type="text" id="adresse" name="adresse" required><br><br>
+    <label for="postal_code">Code postal :</label><br>
+    <input type="text" id="postal_code" name="postal_code" required><br><br>
+    <label for="city">Ville :</label><br>
+    <input type="text" id="city" name="city" required><br><br>
+    <label for="country">Pays :</label><br>
+    <input type="text" id="country" name="country" required><br><br>
+
+
+    <label for="password">Mot de passe :</label><br>
+    <input type="password" id="password" name="password" required><br><br>
+
+    <label for="confirm_password">Confirmer le mot de passe :</label><br>
+    <input type="password" id="confirm_password" name="confirm_password" required><br><br>
+  
+    <label for="lieu_naissance">Lieu de naissance :</label><br>
+    <input type="text" id="lieu_naissance" name="lieu_naissance" required><br><br>
+    
+    <label for="terms">J'accepte les <a href="terms.html">conditions d'utilisation</a> :</label><br>
+    <input type="checkbox" id="terms" name="terms" required><br><br>   
+
+    <input type="submit" value="S'inscrire">
+</form>
+
+</body>
+</html>

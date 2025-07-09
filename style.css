@@ -1,22 +1,24 @@
 @font-face {
-  font-family:'viking' ;
-  src: url(font/VIKING-N.TTF) format('ttf');
-  font-weight: normal;
-  font-style: normal;
+  font-family:'popopo' ;
+  src: url('font/Faith\ Collapsing.ttf') format('truetype');
+
 }
-body {
-  font-family:'viking',sans-serif;
-}
+/* body {
+} */
 h1 {
   color: #080a71; /* bleu foncé */
+  font-family:'popopo';
+  font-size: 200%;
 }
 
 h2 {
   color: #3366ff; /* bleu moyen */
+  font-size: 150%;
 }
 
 h3 {
   color: #14508b; /* bleu clair */
+  font-size: 100%;
 }
 .profile {
  align-items: center;
