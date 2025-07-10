@@ -3,8 +3,9 @@
   src: url('font/Faith\ Collapsing.ttf') format('truetype');
 
 }
-/* body {
-} */
+body {
+  color: ;
+}
 h1 {
   color: #080a71; /* bleu foncé */
   font-family:'popopo';

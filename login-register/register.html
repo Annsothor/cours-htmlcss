@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <title>Inscription</title>
 <style>
+  /* Style général du corps de la page */
   body {
     font-family: Arial, sans-serif;
     background-color: #998ed4;
@@ -12,10 +13,22 @@
     padding-right: 150px;
     padding-top: 100px; 
     padding-bottom: 50px;
-    display: flex;
+    display: inline-block;
     justify-content: center;
   }
 
+  /* Style du titre principal */
+  /*
+    Le sélecteur h2 cible le titre principal de la page d'inscription.
+    - color: Définit la couleur du texte en violet foncé (#761a88) pour attirer l'attention.
+    - text-align: Centre le texte horizontalement dans la page.
+    - font-size: Agrandit la taille du texte à 24px pour le rendre bien visible.
+    - font-weight: Met le texte en gras pour le distinguer.
+    - text-transform: Met le texte en majuscules pour plus d'impact visuel.
+    - letter-spacing: Ajoute un espacement entre les lettres pour une meilleure lisibilité.
+    - text-shadow: Ajoute une légère ombre portée pour donner du relief au texte.
+    - margin-top et margin-bottom: Ajustent l'espacement au-dessus et en dessous du titre pour l'aérer.
+  */
   h2 {
     color: #761a88;
     text-align: center;
@@ -30,18 +43,21 @@
     
   }
 
+  /* Style du formulaire */
   form {
-    background: #fff;
+    background: #ce70d6;
     padding: 20px;
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   }
 
+  /* Style des labels */
   label {
-    display: block;
+    display: inline-block;
     margin-bottom: 5px;
   }
 
+  /* Style des champs de saisie */
   input[type="text"],
   input[type="email"],
   input[type="date"],
@@ -52,10 +68,13 @@
     width: 100%;
     padding: 8px;
     margin-bottom: 10px;
+    box-sizing: border-box;
+    font-size: 14px;
     border: 1px solid #ccc;
     border-radius: 4px;
   }
 
+  /* Style du bouton de soumission principal */
   input[type="submit"] {
     background: #5cb85c;
     color: white;
@@ -65,9 +84,30 @@
     cursor: pointer;
   }
 
+  /* Effet au survol du bouton de soumission */
   input[type="submit"]:hover {
     background: #4cae4c;
   }
+
+  /* Style des titres de section */
+  p{
+    font-weight: bold;
+    font-size: 18px;
+    color: #761a88;
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+
+  /* Style du bouton personnalisé (mot de passe oublié et s'inscrire) */
+  .submit {
+    background-color: rgb(235, 120, 225);
+    cursor: pointer;
+    color: black;
+    border-radius: 20px;
+    border-color: rgb(235, 120, 225);
+    border-width: 10px;
+    font-size: 12px ;
+    }
 </style>
 </head>
 <body>
@@ -97,6 +137,9 @@
     
     <label for="confirm_card_number">Confirmer le numéro de carte bancaire :</label><br>
     <input type="number" id="confirm_card_number" name="confirm_card_number" required><br><br>
+      <form action="traitement_inscription.php" method="POST">
+        </form>
+  <form action="traitement_inscription.php" method="POST">
 <p>Coordonnées</p>
     <label for="phone">Numéro de téléphone :</label><br>
     <input type="tel" id="phone" name="phone" required><br><br>
@@ -121,9 +164,10 @@
     <input type="text" id="lieu_naissance" name="lieu_naissance" required><br><br>
     
     <label for="terms">J'accepte les <a href="terms.html">conditions d'utilisation</a> :</label><br>
-    <input type="checkbox" id="terms" name="terms" required><br><br>   
+    <input type="checkbox" id="terms" name="terms" required><br><br>
 
-    <input type="submit" value="S'inscrire">
+    <a href="restmdp.html" class="submit">Mot de passe oublié ?</a>
+    <input type="submit" class="submit" value="S'inscrire">
 </form>
 
 </body>
