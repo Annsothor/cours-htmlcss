@@ -1,25 +1,18 @@
 body{
     font-family : arial, sans-serif;
-    background-color :rgb(197, 159, 233);
-    color :rgb(59, 12, 90);
-    margin-top : 50px;
-    text-align : center;
-    padding : 20px;
+    background :linear-gradient(rgb(197, 159, 233), rgb(18, 124, 106));
+    background-attachment: fixed;
     }
 form {
-    margin: 50px;
+    margin: 50px auto;
     padding: 20px;
     display: block;
     position: relative;
     width: 300px;
     box-sizing: border-box;
-    background-color: rgba(243, 223, 240, 0.8);
+    background: linear-gradient(rgba(243, 223, 240, 0.8), rgba(197, 159, 233, 0.8));
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);  
-    margin-left: 20px;
-    margin-right: 20px;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    box-shadow: -10px -10px 5px rgba(255, 255, 255, 0.2);
 }
 label {
     display: inline-block;
@@ -31,7 +24,12 @@ label {
     cursor: pointer;
     color: rgb(0, 0, 0);
     border-radius: 10px;
-    border-color: rgb(235, 120, 225);
-    border-width: 10px;
+    border-color: rgb(26, 240, 18);
+    border-width: 1px;
     font-size: 12px ;
+    border-style: solid;
+}
+input {
+    border-radius: 10px;
+    border: 1px solid rgb(26, 240, 18) ;
 }
