@@ -1,76 +1,55 @@
-@font-face {
-  font-family:'popopo' ;
-  src: url('font/Faith\ Collapsing.ttf') format('truetype');
-
+.body{
+  margin: 0;
+  padding: 0;
 }
-body {
-  color: ;
-}
-h1 {
-  color: #080a71; /* bleu foncé */
-  font-family:'popopo';
-  font-size: 200%;
-}
-
-h2 {
-  color: #3366ff; /* bleu moyen */
-  font-size: 150%;
-}
-
-h3 {
-  color: #14508b; /* bleu clair */
-  font-size: 100%;
-}
-.profile {
- align-items: center;
-display : flex;
-}
-.titre {
-  text-align: center;
-}
-.profile img {
-  border-radius: 50%;
-  width: 150px;
-  height: 150px;
-}
-.profile h1 {
-  margin-left: 200px;
-  font-size: 2em;
-}
-#pp{
- background-color: #98c3eb;
-  border-radius: 10px;
-}
-.cv-layout {
+.container{
+background-color: aqua;
 display: flex;
-  flex-direction: row-reverse; /* ← Inverse l'affichage visuel */
-  gap: 40px;
-  margin-top: 30px;
+margin: auto;
 }
-    .col-gauche {
-      width: 30%; /* colonne plus étroite */
-      padding: 20px;
-      text-align: left;
-    }
-
-    .col-droite {
-      width: 70%; /* colonne plus large */
-      padding: 20px;
-      text-align: left;
-    }
-    .col-droite h2 {
-  text-align: center;
+.sidebar{
+  background-color: blueviolet;
+  padding: 30px;
+  margin: 15px;
 }
-
-    h3 {
-      margin: 10px 0;
-    }
-
-    h2 {
-      margin: 10px 0;
-    }
-    .col-gauche, .col-droite {
-  background-color: #98c3eb;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+.sidebar img{
+border-radius: 50px;
+width: 100%;
+}
+.sidebar h1{
+  font-size: 30px;
+  margin: 0 0 10;
+}
+.sidebar p{
+  font-size: 20px;
+  margin: 3px ;
+}
+.content{
+  background-color: brown;
+  padding: 60px;
+  margin: 15px;
+  width: 1500%;
+}
+.content h3{
+  font-size: 30px;
+  padding: 1px;
+  margin-bottom: 20px;
+}
+.content h2{
+  font-size: 50px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+.content p{
+  font-size: 15px;
+  margin: 3px;
+  line-height:1;
+}
+.content h4{
+  font-size: 20px;
+  font-weight: bold;
+  margin: 0;
+}
+.section{
+  margin-bottom: 20px;
 }
