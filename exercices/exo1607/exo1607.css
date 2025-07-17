@@ -1,3 +1,9 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
 photo {
     display: flex;
     justify-content: center;
@@ -6,11 +12,8 @@ photo {
 h1{
     display: flex;
     justify-content: center;
-    transition-property:
-    width 2s,
-    height 2s,
-    background-color 2s,
-    transform 2s;
+    transition: transform 2s ease-in-out;
+    
     /* texte en dégradé */
     background: linear-gradient(#a71e5e, #813878, #ffe4e1 );
     background-clip: text;
@@ -18,16 +21,14 @@ h1{
     -webkit-text-fill-color: transparent;
     /* fin texte en dégradé */
 }
-h1 :hover {
+h1:hover {
     background-color: #ffcccc;
-    width: 2000px;
-    height: 2000px;
-    transform: rotate(180deg);
-
+    transform: rotate(360deg); 
 }
 body {
     background-color: #000000;
     font-family: Arial, sans-serif;
+    width: auto
 }
 
 .navbar {
@@ -62,7 +63,7 @@ body {
        
     
 table {
-    transform: skew(10deg);
+    transform: skew(10deg)  ;
     border-collapse: collapse;
     width: 60%;
     margin: 30px auto;
@@ -71,7 +72,10 @@ table {
     color: rgb(207, 198, 198);
     box-shadow: 0 0 10px rgba(173, 13, 13, 0.1);
     background: linear-gradient(90deg, rgb(7, 7, 26), rgb(61, 5, 5));
+
 }
+
+
 
 td {
     border: 1px solid #ccc;
@@ -143,4 +147,109 @@ footer h2 {
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+}
+
+.tableau {
+    
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    color: white;
+    
+
+}
+
+.tableau2 {
+    transform: skew(-10deg);
+    grid-column: 3;
+    grid-row: 1;
+}
+
+.tableau1:hover  {
+    animation: rotate 10s linear infinite;    
+    
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.tableau2:hover  {
+    animation: rotate 10s linear infinite;       
+    grid-column: 3;
+    grid-row: 1;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+
+.fade {
+  position: relative;
+  width: 100%;
+  min-height: 60vh;
+  top: -25px;
+  background-image: linear-gradient(0deg, transparent, black 75%);
+  z-index: 1;
+}
+
+
+.fade {
+  position: relative;
+  width: 100%;
+  min-height: 60vh;
+  top: -25px;
+  background-image: linear-gradient(0deg, transparent, black 75%);
+  z-index: 1;
+}
+
+.star-wars {
+    z-index: -1;
+  grid-column: 2;
+  grid-row: 1;
+  justify-content: center;
+  position: relative;
+  height: 800px;
+  color: #feda4a;
+  font-family: 'Pathway Gothic One', sans-serif;
+  font-size: 500%;
+  font-weight: 600;
+  letter-spacing: 6px;
+  line-height: 150%;
+  perspective: 400px;
+  text-align: justify;
+  overflow: hidden;
+}
+
+.crawl {
+    
+  position: relative;
+  top: 9999px;
+  transform-origin: 50% 100%;
+  animation: crawl 60s linear;
+}
+
+.crawl > .title {
+  font-size: 90%;
+  text-align: center;
+}
+
+.crawl > .title h1 {
+  margin: 0 0 100px;
+  text-transform: uppercase;
+}
+
+@keyframes crawl {
+  0% {
+    top: 0;
+    transform: rotateX(20deg)  translateZ(0);
+  }
+  100% { 
+    top: -6000px;
+    transform: rotateX(25deg) translateZ(-2500px);
+  }
 }
